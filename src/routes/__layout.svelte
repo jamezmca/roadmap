@@ -7,7 +7,7 @@
 <svelte:head>
 	<title>CodeMap</title>
 </svelte:head>
-<div class="min-h-screen flex flex-col bg-slate-900 text-white">
+<div class="min-h-screen flex flex-col bg-slate-900 text-slate-50 text-xs sm:text-sm">
 	<Header />
 
 	<main class="flex-1 flex flex-col">
