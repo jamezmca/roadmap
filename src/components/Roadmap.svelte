@@ -9,13 +9,13 @@
 			milestones: {
 				'the internet is hard': {
 					url: 'https://www.internetingishard.com/html-and-css/',
-					imgUrl: 'https://www.google.com',
+					imgUrl: 'https://i.ytimg.com/vi/s4gBChg6AII/maxresdefault.jpg',
 					description:
 						'what a cool way to learn javascript. it teaches you everything that you need to know'
 				},
 				wootube: {
 					url: 'https://www.internetingishard.com/html-and-css/',
-					imgUrl: 'https://www.google.com',
+					imgUrl: 'https://i.ytimg.com/vi/s4gBChg6AII/maxresdefault.jpg',
 					description:
 						'what a cool way to learn javascript. it teaches you everything that you need to know'
 				}
