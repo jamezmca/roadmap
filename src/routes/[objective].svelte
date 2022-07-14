@@ -50,9 +50,9 @@
 		</div>
 	{:else}
 		<h2
-			class="text-center font-extralight text-lime-400 uppercase text-2xl sm:text-5xl font-medium mx-auto w-fit uppercase "
+			class="text-center font-extralight uppercase sm:text-base bg-lime-400 text-black font-semibold px-4 py-1 sm:py-2 sm:px-8 mx-auto w-fit uppercase "
 		>
-			 {pageName} Content Map
+			 Current Objective: {pageName}
 		</h2>
 		<div class={'flex flex-col gap-1 duration-300'}>
 			<!-- do it so that the initial height is 0 and then it changes to fit -->
