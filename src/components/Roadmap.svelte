@@ -1,5 +1,4 @@
 <script>
-	import userName from '../store';
 	import ObjectCard from './ObjectCard.svelte';
 	import ProgressBar from './ProgressBar.svelte';
 

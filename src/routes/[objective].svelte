@@ -6,6 +6,7 @@
 	}
 </script> -->
 <script>
+	import userName from '../store';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 	const { objective: pageName } = $page.params;
@@ -13,6 +14,7 @@
 	let titleTwo = '';
 	let objectTwo = '';
 	let milestoneMapped = '';
+
 	onMount(() => {
 		const [[title, object]] = Object.entries(JSON.parse(localStorage.getItem('roadmap')));
 		titleTwo = title;
@@ -21,7 +23,7 @@
 			window.location.href = '/';
 		}
 		milestoneMapped = Object.keys(object.milestones).map((element, i) => {
-			return { name: element, index: i, ...object.milestones[element] };
+			return { name: element, index: i, ...object.milestones[element], title };
 		});
 		loading = false;
 		console.log(milestoneMapped, titleTwo, objectTwo);
@@ -57,14 +59,23 @@
 		</div>
 		<div class={'flex flex-col gap-1 duration-300'}>
 			<!-- do it so that the initial height is 0 and then it changes to fit -->
-			{#each milestoneMapped as { name, description, url, imgUrl, i }}
+			{#each milestoneMapped as { name, description, url, imgUrl, i, title }}
 				<a href={url} class="relative p-[1px]  flex flex-col group" target="_blank">
+					{#if $userName.progress?.[title] && $userName.progress[title].includes(name)}
+						<div class="absolute inset-[1px] z-50 bg-gray-900 opacity-80" />
+						<div class="z-[100] absolute inset-0 grid place-items-center">
+							<h1 class="uppercase bg-slate-900 text-4xl px-10 py-4">Complete</h1>
+						</div>
+					{/if}
+
 					<div class="inset-0 bg-slate-500 absolute  group-hover:bg-cyan-300 duration-300" />
 					<img src={imgUrl} alt={name} class="relative " />
 					<div
 						class="sm:absolute relative bottom-0 sm:bottom-[1px] left-0 sm:left-[1px] right-0 sm:right-[1px] p-3 sm:p-4 sm:pt-10 sm:pt-16 bg-gradient-to-t from-slate-900 to-transparent"
 					>
-						<div class="absolute inset-0 bg-gradient-to-t sm:from-slate-900 sm:to-transparent from-gray-900 to-gray-900" />
+						<div
+							class="absolute inset-0 bg-gradient-to-t sm:from-slate-900 sm:to-transparent from-gray-900 to-gray-900"
+						/>
 						<h2 class="uppercase relative text-base sm:text-xl text-shadoww z-20">{name}</h2>
 						<p class="text-shadoww z-20 relative">{description}</p>
 					</div>
@@ -95,7 +106,7 @@
 		<div
 			class="inset-0 border-white group-hover:opacity-0 duration-300 border border-solid absolute"
 		/>
-		<h1>COMPLETE</h1>
+		<h1>GRADUATE</h1>
 		<div
 			class=" absolute origin-left bg-cyan-300 duration-300 top-0 w-full h-[1px] scale-x-0 left-0 group-hover:scale-x-100 "
 		/>
@@ -120,7 +131,6 @@
 	@media (min-width: 640px) {
 		.outlined {
 			-webkit-text-stroke: 1.5px cyan;
-
 		}
 	}
 

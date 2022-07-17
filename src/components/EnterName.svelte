@@ -7,7 +7,7 @@
 			return;
 		}
 
-		$userName = inputValue;
+		$userName.name = inputValue;
 	}
 </script>
 

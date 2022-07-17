@@ -1,18 +1,31 @@
 <script>
 	export let object;
-	export let complete;
 	export let title;
-	// console.log(object, complete);
+	import userName from '../store';
+	//{ name: '', progress: {title: ['milestone']} }
 
 	const milestoneMapped = Object.keys(object.milestones).map((element) => {
 		return { name: element, ...object.milestones[element] };
 	});
+
+	const numMilestones = milestoneMapped.length;
 	console.log(milestoneMapped);
 	//make sure it has a glowing shadow
 	console.log(object);
 
 	function changePage() {
 		localStorage.setItem('roadmap', JSON.stringify({ [title]: object }));
+	}
+
+	function handleMilestoneToggle(name) {
+		console.log('name', name, 'name');
+		if (!$userName.progress?.[title]) {
+			return ($userName.progress[title] = [name]);
+		}
+		if ($userName.progress?.[title].includes(name)) {
+			return ($userName.progress[title] = $userName.progress[title].filter((val) => val !== name));
+		}
+		$userName.progress[title] = [...$userName.progress[title], name];
 	}
 </script>
 
@@ -30,17 +43,33 @@
 		<div class="flex justify-center items-center flex-wrap gap-4 sm:gap-8 pt-4">
 			<!-- do it so that the initial height is 0 and then it changes to fit -->
 			{#each milestoneMapped as { name, description, url, imgUrl, imgIcon }}
-				<div class="w-6 h-6 sm:w-8 sm:h-8 duration-300 rounded-full relative ">
+				<div
+					class="w-6 h-6 sm:w-8 sm:h-8 duration-300 rounded-full relative "
+					on:click|preventDefault={() => handleMilestoneToggle(name)}
+				>
 					<div
-						class="absolute z-20 inset-0 rounded-full bright-shadow opacity-40 hover:opacity-100 duration-300 cursor-pointer"
+						class={'absolute z-40 inset-0 rounded-full bright-shadow  duration-300 cursor-pointer ' +
+							($userName.progress?.[title] && $userName.progress[title].includes(name)
+								? 'opacity-100 hover:opacity-40'
+								: 'opacity-40 hover:opacity-100')}
 					/>
 					<div class="absolute inset-0 rounded-full overflow-hidden">
 						<img
-							class=" object-cover w-full h-full"
+							class={' object-cover w-full h-full duration-300 ' +
+								($userName.progress?.[title] && $userName.progress[title].includes(name)
+									? 'opacity-30'
+									: 'opacity-100')}
 							src={imgIcon}
 							alt={name}
 						/>
+						<i
+							class={'duration-300 fa-solid fa-check text-cyan-300 text-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 ' +
+								($userName.progress?.[title] && $userName.progress[title].includes(name)
+									? 'opacity-100'
+									: 'opacity-0')}
+						/>
 					</div>
+					<!-- $userName.progress?.[title] && $userName.progress[title].includes(name) -->
 					<!-- <h2>
 						{name}
 						namma
@@ -55,7 +84,6 @@
 </a>
 
 <style>
-	
 	.dim-shadow {
 		border: 1px solid hsla(130, 100%, 50%, 0.7);
 		box-shadow: 0 0 4px 1px hsla(83.65, 100%, 59.22%, 0.3);
