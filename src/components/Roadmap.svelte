@@ -181,7 +181,7 @@
 <div class="flex flex-col gap-4">
 
 	{#each Object.keys(objectives) as objectKey}
-	<ObjectCard object={objectives[objectKey]} title={objectKey} complete={true} />
+	<ObjectCard object={objectives[objectKey]} title={objectKey} />
 	<!-- <div class="h-5 sm:h-10 w-1 bg-slate-300"></div> -->
 	{/each}
 </div>

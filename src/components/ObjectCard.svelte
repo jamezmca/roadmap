@@ -9,16 +9,13 @@
 	});
 
 	const numMilestones = milestoneMapped.length;
-	console.log(milestoneMapped);
 	//make sure it has a glowing shadow
-	console.log(object);
 
 	function changePage() {
 		localStorage.setItem('roadmap', JSON.stringify({ [title]: object }));
 	}
 
 	function handleMilestoneToggle(name) {
-		console.log('name', name, 'name');
 		if (!$userName.progress?.[title]) {
 			return ($userName.progress[title] = [name]);
 		}

@@ -26,7 +26,6 @@
 			return { name: element, index: i, ...object.milestones[element], title };
 		});
 		loading = false;
-		console.log(milestoneMapped, titleTwo, objectTwo);
 	});
 </script>
 
