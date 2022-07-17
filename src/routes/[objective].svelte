@@ -29,7 +29,7 @@
 </script>
 
 <div
-	class="max-w-[85ch] w-full mx-auto py-4 sm:py-14 flex-1 relative flex flex-col gap-4 sm:gap-14 "
+	class="max-w-[85ch] w-full mx-auto py-4 sm:py-10 min-h-fit flex-1 relative flex flex-col gap-4 sm:gap-10 "
 >
 	{#if loading}
 		<div class="absolute w-10 h-10 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -49,22 +49,24 @@
 			</div>
 		</div>
 	{:else}
-		<h2
-			class="text-center font-extralight uppercase sm:text-base bg-lime-400 text-black font-semibold px-4 py-1 sm:py-2 sm:px-8 mx-auto w-fit uppercase "
+		<div
+			class="text-center flex flex-col sm:gap-1 font-extralight uppercase sm:text-2xl text-white font-semibold px-4 sm:px-8 mx-auto w-fit uppercase "
 		>
-			 Current Objective: {pageName}
-		</h2>
+			<h2>Current Objective:</h2>
+			<h2 class="outlined text-2xl sm:text-4xl">{pageName}</h2>
+		</div>
 		<div class={'flex flex-col gap-1 duration-300'}>
 			<!-- do it so that the initial height is 0 and then it changes to fit -->
 			{#each milestoneMapped as { name, description, url, imgUrl, i }}
-				<a href={url} class="relative p-[1px] flex flex-col group" target="_blank">
-					<div class="inset-0 bg-slate-500 absolute  group-hover:bg-lime-300 duration-300" />
+				<a href={url} class="relative p-[1px]  flex flex-col group" target="_blank">
+					<div class="inset-0 bg-slate-500 absolute  group-hover:bg-cyan-300 duration-300" />
 					<img src={imgUrl} alt={name} class="relative " />
 					<div
-						class="absolute bottom-[1px] left-0 left-[1px] right-[1px] p-3 sm:p-4 pt-14 bg-gradient-to-t from-slate-900 to-transparent"
+						class="sm:absolute relative bottom-0 sm:bottom-[1px] left-0 sm:left-[1px] right-0 sm:right-[1px] p-3 sm:p-4 sm:pt-10 sm:pt-16 bg-gradient-to-t from-slate-900 to-transparent"
 					>
-						<h2 class="uppercase text-base sm:text-lg">{name}</h2>
-						<p class="">{description}</p>
+						<div class="absolute inset-0 bg-gradient-to-t sm:from-slate-900 sm:to-transparent from-gray-900 to-gray-900" />
+						<h2 class="uppercase relative text-base sm:text-xl text-shadoww z-20">{name}</h2>
+						<p class="text-shadoww z-20 relative">{description}</p>
 					</div>
 				</a>
 				<!-- <div class="flex flex-col overflow-hidden">
@@ -86,24 +88,25 @@
 			{/each}
 		</div>
 	{/if}
-	<a href='/'
-		class=" text-slate-300 hover:text-lime-300 px-8 py-2 sm:px-10 sm:py-4 text-xl mt-4 sm:text-3xl duration-300 cursor-pointer w-fit mx-auto relative group relative"
+	<a
+		href="/"
+		class=" text-white hover:text-cyan-300 px-8 py-2 sm:px-10 sm:py-4 text-xl mt-4 sm:text-3xl duration-300 cursor-pointer w-fit mx-auto relative group relative"
 	>
 		<div
-			class="inset-0 border-slate-300 opacity-40 group-hover:opacity-0 duration-300 border border-solid absolute"
+			class="inset-0 border-white group-hover:opacity-0 duration-300 border border-solid absolute"
 		/>
-		<p>COMPLETE</p>
+		<h1>COMPLETE</h1>
 		<div
-			class=" absolute origin-left bg-lime-300 duration-300 top-0 w-full h-[1px] scale-x-0 left-0 group-hover:scale-x-100 "
-		/>
-		<div
-			class="absolute origin-right bg-lime-300 duration-300 bottom-0 w-full h-[1px] scale-x-0 left-0 group-hover:scale-x-100"
+			class=" absolute origin-left bg-cyan-300 duration-300 top-0 w-full h-[1px] scale-x-0 left-0 group-hover:scale-x-100 "
 		/>
 		<div
-			class=" absolute origin-top bg-lime-300 duration-300 left-0 h-full w-[1px] scale-y-0 top-0 group-hover:scale-y-100"
+			class="absolute origin-right bg-cyan-300 duration-300 bottom-0 w-full h-[1px] scale-x-0 left-0 group-hover:scale-x-100"
 		/>
 		<div
-			class=" absolute origin-bottom bg-lime-300 duration-300 right-0 h-full w-[1px] scale-y-0 top-0 group-hover:scale-y-100"
+			class=" absolute origin-top bg-cyan-300 duration-300 left-0 h-full w-[1px] scale-y-0 top-0 group-hover:scale-y-100"
+		/>
+		<div
+			class=" absolute origin-bottom bg-cyan-300 duration-300 right-0 h-full w-[1px] scale-y-0 top-0 group-hover:scale-y-100"
 		/>
 	</a>
 </div>
@@ -111,6 +114,17 @@
 <style>
 	.outlined {
 		-webkit-text-fill-color: transparent;
-		-webkit-text-stroke: 1px greenyellow;
+		-webkit-text-stroke: 1px cyan;
+	}
+
+	@media (min-width: 640px) {
+		.outlined {
+			-webkit-text-stroke: 1.5px cyan;
+
+		}
+	}
+
+	.text-shadoww {
+		text-shadow: 0 0 1px transparent, 0 1px 2px rgb(0 0 0 / 80%);
 	}
 </style>

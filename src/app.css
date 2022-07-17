@@ -3,5 +3,14 @@
 @tailwind utilities;
 
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Bungee', cursive;
+}
+
+h2,
+input {
+    font-family: 'Orbitron', sans-serif;
 }

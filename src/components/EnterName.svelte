@@ -17,15 +17,15 @@
 	>
 		<input
 			type="text"
-			class="flex-1 outline-none bg-slate-700 text-center p-4 text-base sm:text-2xl"
+			class="flex-1 outline-none bg-slate-700 text-white text-center p-4 text-base sm:text-2xl"
 			bind:value={inputValue}
 			placeholder="Enter Name"
 		/>
 		<div
 			on:click={saveName}
-			class="grid place-items-center p-4 text-lime-300 border-solid border-lime-300  cursor-pointer relative after:absolute after:w-full after:h-full after:top-0 after:right-full after:bg-lime-300 after:duration-300 hover:after:translate-x-full overflow-hidden hover:text-slate-900 hover:font-medium duration-300 sm:text-base fullLoad"
+			class="grid place-items-center p-4 text-white  cursor-pointer relative overflow-hidden hover:text-cyan-300 duration-300 sm:text-base fullLoad"
 		>
-			<p class="z-10">BEGIN</p>
+			<h1 class="z-10 text-xl">BEGIN</h1>
 		</div>
 	</div>
 </div>

@@ -15,6 +15,13 @@
 					description:
 						'what a cool way to learn javascript. it teaches you everything that you need to know'
 				},
+				'CSS Crash Course': {
+					url: 'https://www.youtube.com/watch?v=GSOVTLajpac',
+					imgUrl: 'https://i3.ytimg.com/vi/GSOVTLajpac/maxresdefault.jpg',
+					imgIcon: 'https://i3.ytimg.com/vi/GSOVTLajpac/maxresdefault.jpg',
+					description:
+						'what a cool way to learn javascript. it teaches you everything that you need to know'
+				},
 				'The Odin Project': {
 					url: 'https://www.theodinproject.com/paths/foundations/courses/foundations',
 					imgUrl:
@@ -53,54 +60,129 @@
 				}
 			}
 		},
-		aaaaaaaa: {
-			description: '',
+		'React & Next.js': {
+			description: 'Frontend frameworks are essential to optimizing your developer experience & capabilities - Next.js & React are two of the most popular current web frameworks in 2022.',
 			milestones: {
-				'the internet is hard': {
-					url: 'https://www.internetingishard.com/html-and-css/',
-					imgUrl: 'https://www.google.com',
-					imgIcon: '',
+				'React Crash Course': {
+					url: 'https://youtu.be/tYcjZomsFkY',
+					imgUrl: 'https://i3.ytimg.com/vi/tYcjZomsFkY/maxresdefault.jpg',
+					imgIcon: 'https://avatars.githubusercontent.com/u/6412038?s=280&v=4',
 
 					description:
-						'what a cool way to learn javascript. it teaches you everything that you need to know'
+						'A full introductory crash course on React - finishing off by building a React project with an API.'
 				},
-				wootube: {
-					url: 'https://www.internetingishard.com/html-and-css/',
-					imgUrl: 'https://www.google.com',
-					imgIcon: '',
+				'Full Stack Open': {
+					url: 'https://fullstackopen.com/en/about',
+					imgUrl: 'https://i.imgur.com/kDm2nw4.png',
+					imgIcon: 'https://i.imgur.com/kDm2nw4.png',
+					description:
+						'Consolidate your React skills by completing this comprehesive curriculum.'
+				},
+				'React Developer Portfolio': {
+					url: 'https://youtu.be/Zf_cxEV2vNc',
+					imgUrl: 'https://i.imgur.com/MsFlD2I.png',
+					imgIcon: 'https://i.imgur.com/MsFlD2I.png',
+					description:
+						'Build this developer portfolio in React to display all of your amazing projects, and host it live to show prospective employers.'
+				},
+				'Next.js Crash Course': {
+					url: 'https://youtu.be/UzMr7-0FgA0',
+					imgUrl: 'https://i3.ytimg.com/vi/UzMr7-0FgA0/maxresdefault.jpg',
+					imgIcon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAADY2NiZmZnx8fGsrKyHh4f29vZQUFAfHx9sbGwbGxvw8PBpaWns7Ow2NjYtLS3j4+M9PT3e3t6zs7OXl5fR0dG6urrBwcEoKCh4eHiPj49ISEigoKDGxsaAgIAREREwMDBWVlZhYWF6enoUFBRKSkpBQUFfkkUAAAAMEUlEQVR4nO2d53bqvBKGkQMYQ2wwBhOKwUAS7v8OjwQJcZlRtyW+s98/e60dih480hS1Afmva+C6AZ2rP8Jytl3MqRbbqOztS0kPhNvLvljlaZqE4eBXYZKk+abYXxddfzvplHD7WeTpQKA0H53m3bWBdEVYxkUuYqsqWE2jThpCOiG8joRPDlKyimf2G2OdcDvOQzEM/iz3Z7vtIXYJy3FgQPejbL212CRik/BTqefxFJysNYpYI7ytbOE99HGx0y5iiXCX2eVjSm09SAuE+8Q+H1NYWBlbjQkLk7FTpNGXc8KiQ7wHo3EMa0S475rvzuiOcDfsA5D2x70bwkMH4yem5OqAcNMfH9NRPzDXI9z1y8c07pMwshafqShd9kb46YKPad0T4dEV4GCQ66QdqoSTnlwEomnnhG9O+ahWHRM6GWLqSlX9hgrh/N01HlOo6P4VCKeu2X6lFsXJE/YSZstJKRiXJrRcpjDTsQNCD8aYqjLrhBbKhHaVSk95SBGWWkXsbhXKIkoReghIESUdowxhR7U0U0k+RQlCTwEpotS0nJjQSxN9SOopCgk9cxN1JRYIHWaDMkqNCb2KZCDlhoQexaKYhAkjlzB23XwZiTINHuHcdePlJMgXeYTeOsKG+JNwHEKv/URV/AEVJ1y7bri8NlqEE9fNVtFOh9BtXVRVnFIxRtjz3JKpODk/QuhsbkJX+JwGTBi5brC60JkpmPBlHMWfUJcBEr5EtNYUFr2BhF0ukelOyHgKEXqfMsFCEimAcOm6qbqKZQm9q/7KCq5ptAm9mWJSFzjYtAlfJWeCJEX4AoULXNC0W4vwNT3Fr4BKf5PQn6ww0/mtgUyxSejNIwz0Vga2C/0NQm8eYaoZdrQfYoPQl0cYrnVb0uqJdcKT1WYaaK2d3bSG0zqhL/NMK4PewiW82mujkYKrQW9pBjY1Qk8S3+HEJDR+5xD6klRMR0Zvv+KEZh9sTYVhZznihH64ijwyjf1RQj+qM8nWuMSwxgi9mNAOL+b7ADKM0EL7zHU6W1jEuoQJvShzj6xYUgET+mCkgZ0EPIUJbXy0oYbLpZ0prxtE6IORTm3V+d4gwg87n22iwlp6mkGE7mdEj+Rg7bOiNqG9D9dVMiP2tjR+tgk739ArUnixuSFn0yZ0Xsofk4vFTxu2CV1H3SvLi8m3TUKbv5+O8pnl3O3UJIS7QBAEEplMGPAV3l/BNZLkwDKbTPBBVNLPedMkBEM2Vg+YixEDwlUZDMKbIKKYkkUCVXNbkl7H9OcRB5xueO+u4mRGQMiqP+z7OGlf8firxA5ReafWIIRXlzwGJOHaIUp4fsNVMCsYETJDh+ugfDzhUeOdE5qVF7X/Wctnx991Qji9p4RlSYRFhUBmoLoSgpUIwwO5gd8xNllSsK8TwjkLJZzvxXYayHSPZEHIGP7TCQuKxybFsVWdEP4GSrhNr0I7lSIcfBBkPNugs7JGhFmdEA4IKWGUZF/kzB+j5QhZe8+AMWYRmSNRvxHhe50QfhF7hgkbJPi5oyRhOIEMnv0vVmo3InyOzAJC5qZEdipJOMhLoMVjzsoBM8JDlRDxMj+EaQSa11OyhJDLOBJyQ6MdM8JdlRAZLX8I2bDEW2QjTci+9LvGk0S8rMaMsKgSInbyS8haxrFTecL3ecNlXLkMZoSjKiHyOU/CZE4WeKFWnvA+aVLxTAV/ytKM8FglRKpQT0Lms3C/r0DIIo3ls0/ToeeL54jMCLMqIdIV/ghZ3IHaqQphePn7rYZLQVRmRvheJUQqQBXC4RyPT1UIBzSA+G32VLRK0IxwWCVETKVCyKwas1MlQjYAfN1tho7QC36wZEYYVgmRUaRKyL4O6a5qhOzRTajLCL6EAa8Z4W/N9E6I+Nwa4fBGZvAvoUhIB2bqnli0JppIMCQ8VwiRl9QI2TJqeEGRIuE9y8j3EgUSQ8KbFGH10J09YqeMMBxiAt6wppk1lktVZUh4kCMc1t4CDg2sThPNEIFtvHACqYoMCSfKz5ChQHbKr0RB0wVs38BWPJvdPyGzU2D4o4TRNEZ0hWzxE0OvywEhfdOyPTxIVaKq+imhCKdKXBAGMyAMUR1LM5YJxzQxFE1Z9jPSNHpLAdipIuGjmsHOCBKtZrXoLXCP3yQMr+26lCIhq0i9PyYWuo1pqh4fcb0AISuNNeNTNcLNryccs1ol96WGhFupyLt9zN6q9dMrESbbX0/Ipmv4I5TFyBvPD4GDBKdNv6+UH8Z/WEEpOGnSYvakRJicG+OpCuEb9Z3PbJRVUnjLki1mwHgVAypHbxqpuUqdpqzZOE2keIugOIT3S2vCNOMERrUqBhJeUMIlNMzu6iGXPGF4qOfR6ZbrMnDCfE5/45yGtyW+L6NWicKriSAhzfCq7ZQnPDXNniVSeKkGJ/ygDyUh5bi44gH8qkqIpKIYIft5KrYmTbhp9zt2hjW6TohPOLr/NvEEM9S3KuENfg1KSL+7YqeyhDTka/eHW7MMXvsWHuGK7FgbUCutVfXxmRmEMFxW7FRh7ilufRxzGcjMqYAwPJPousYXih2MCFmG97RT+flDKIYZETTb5xMOkjcGgfqT+uwaOkOKEdJU8Wmn8nPAYBy6Qys2AkLmLkZfMyTkbMyQorPcKGH4/bRTKULcMbDSN1yKhQlXmwfh5u4oTljI2ZjlRlcqoIRs0uHnd5EivNJoDbd42CO3CTeXnCa2m3RKDXtNTlmSL7Ap8sZKBXS1CU5IR+OfeVMZQppXRmhOv0YuI2gT7uhPcWRHe9Ehi516HZESy8Aaq03QFUMcQjo2PsyOEQ5DXI+X8ELMy6MMLiZMR7TzB8V4dX/1x35coGPpoU4I58DvXELW7I+ff0mEi7by/cZflUOTTshlGEXepEGIrdzDrPyu4mGnonVtBRsuz9yiDOs07ejtZEDYWrkHLpIP4xhzxg9d7/FeOo2nHMXH9DqNBYW1Io7bI+0qjrW3ubRWX+qtoE0X3p4J1lpBq7kK+oMtKfJSUYtQcyX73p8N7jUBK9l1dwJc/LTTjzbht+ZHpTPOOhR32rUJtXcFfbi4/EkoYFeQ/s6usQ+bwhoCd3ZpP4lwErnfFdZQARHq77BMS+/sFNxhabBLduObnSK7ZA02kZ488/vITmeDjcDhwa9D3pDd6iamlnnl9+sHfVYITZ7Dxic73WOERnsQTx6NpyVKaLJTNvz2xk45p7cYnaOf3nw5ZIpzAo/ZKUorT+y0ecZnjdDshJqxH2cUNa9ktXia2fvUBzsNCZeQX3gSKfAh3xecSGd4dsTGgzOWWxck2T0ZsnDu94UnQxqeUjN0fvhEe7d0k9DwbIrM8bF9wM1Btk/ZDdzm+xKn7BoOp9ThWmmppqDLn/4PT7v25Og9LYHXeADYnpzxqa7muZ4o4Ytc1dWW9M0B//3bH9wfOKQnhRs8XvN6BKVbWLw4Q1FRajfpkNnr2ekNBEEJX89OC5gDJ/RtJkIkzooXjNCDcxRVxLkYGCXUnfZ2Iq3bAf25CEIs7n2yOOHruAzdWzpfJ48qOQx8whcJwQ1uy32NVNHkxuOXuPwJuuJJgdD/ROrIb7+Y0PcB1fz2eM9rGvBteYqE3tyuA2gocR6oBKG/bjE8SwDKEPqKGHLCbUVCPw01BCr42oQ+Ig7lnqAsofsDzZtKZQYZFULfnAbnpnFdQr+iG6T4a0boU4wqjEX1CP3JNJorZqwRQkdIOFB4UQJUIvRivMkk3aAmofvyFLfoZIMQ3OvZo6bKgMqETqvhgaqF6hG6260mqshYI4Q3XneuTOL6C1uEhEz77416D1CbsPcg7siv+nZBSA72rp8SKhUUfbshJI/jYXpQqBalWSTsyf/js7s9EBov1hRrpd8B7RASUnQ5rI50XLxtQpo4dlSLG5ra50MWCKl77KCMk57E3yslK4SE3CzvJtlM7LSLWCOk2lmL5XIz99CQPUJCyrEFyGw9s9gkYpeQKhofTcbWYC9b55WXZUKmy0groEtGseWn91AHhFRlXCgZbDCaWvB8sLohvGu7K3LhhEeaFyfNxE9SHRI+FF3GxSpP0yT866Bhkqb5qthfpScfDNQ54Z9m2+2carvtpLuh6pHQkf4Rvr7+Eb6+/hG+vv4HN2ukXWIjKh0AAAAASUVORK5CYII=',
+					description:
+						'Build this developer portfolio in React to display all of your amazing projects, and host it live to show prospective employers.'
+				},
+				'Next.js Ecommerce Store': {
+					url: 'https://youtu.be/rbMvm-CrkOA',
+					imgUrl: 'https://i3.ytimg.com/vi/rbMvm-CrkOA/maxresdefault.jpg',
+					imgIcon: 'https://media-exp1.licdn.com/dms/image/C560BAQF1NNJs-2xA5g/company-logo_200_200/0/1594068219050?e=2147483647&v=beta&t=v7T4H7LBiBKWV0QHIS-NKzpg3PCAp2HU4ohKSG5uCNI',
+					description:
+						'Build this E-commerce store with Stripe.js to sell products & subscriptions and handle payment transactions.'
+				},
+			}
+		},
+		"Node.js": {
+			description: 'The favorite JavaScript backend framework - complimented with Express.js to allow you to build any backend infrastucture of your wildest dreams.',
+			milestones: {
+				'Node.js Crash Course': {
+					url: 'https://youtu.be/tPavCLJp0Cc',
+					imgUrl: 'https://i3.ytimg.com/vi/tPavCLJp0Cc/maxresdefault.jpg',
+					imgIcon: 'https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png',
+					description:
+						'Learn the essentials of backend development with Node.js.'
+				},
+				'Full Stack Open': {
+					url: 'https://fullstackopen.com/en/about',
+					imgUrl: 'https://i.imgur.com/kDm2nw4.png',
+					imgIcon: 'https://i.imgur.com/kDm2nw4.png',
+					description:
+						'Dive deeper into backend development with Node.js and incorporating it with frontend and database systems.'
+				},
+				'Stock API Project': {
+					url: 'https://youtu.be/37LJxWzjy6g',
+					imgUrl: 'https://i3.ytimg.com/vi/37LJxWzjy6g/maxresdefault.jpg',
+					imgIcon: 'https://i3.ytimg.com/vi/37LJxWzjy6g/maxresdefault.jpg',
+					description:
+						'Build and deploy and API endpoint that serves JSON stock data information.'
+				},
+				'Full Stack Project': {
+					url: 'https://youtu.be/qLUTHVf2mF4',
+					imgUrl: 'https://i3.ytimg.com/vi/qLUTHVf2mF4/maxresdefault.jpg',
+					imgIcon: 'https://i3.ytimg.com/vi/qLUTHVf2mF4/maxresdefault.jpg',
+					description:
+						'Build a full stack web app with Node.js Firebase HTML & CSS.'
+				},
+			
+			}
+		},
+		"NoSQL DBs": {
+			description: 'Why not learn how to store your data in a glorified JSON database.',
+			milestones: {
+				'FreeCodeCamp - MongoDB & Mongoose': {
+					url: 'https://www.freecodecamp.org/learn/back-end-development-and-apis/mongodb-and-mongoose/install-and-set-up-mongoose',
+					imgUrl: 'https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png',
+					imgIcon: 'data:image/png;base64,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',
 
 					description:
-						'what a cool way to learn javascript. it teaches you everything that you need to know'
+						'One of the most common NoSQL databases in production environment'
+				},
+				"Firebase Firestore": {
+					url: 'https://youtu.be/QoGl2o9elrc',
+					imgUrl: 'https://i3.ytimg.com/vi/QoGl2o9elrc/maxresdefault.jpg',
+					imgIcon: 'https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png',
+					description:
+						'Google\'s Firestore is an amazingly quick and cost effective way to get a live NoSQL database running today.'
 				}
 			}
 		},
-		javssssssascript: {
-			description: '',
+		"Relational DBs": {
+			description: 'Learning how to maintain a relational database is essential for managing big data applications & much more!',
 			milestones: {
-				'the internet is hard': {
-					url: 'https://www.internetingishard.com/html-and-css/',
-					imgUrl: 'https://www.google.com',
-					imgIcon: '',
-
+				'FreeCodeCamp - Relational Databases': {
+					url: 'https://www.freecodecamp.org/learn/relational-database/',
+					imgUrl: 'https://i.imgur.com/0AmFayz.png',
+					imgIcon: 'data:image/png;base64,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',
 					description:
-						'what a cool way to learn javascript. it teaches you everything that you need to know'
+						'From writing bash scripts to coding and populating databases with celestial bodies - there\'s plently to learn.'
 				},
-				wootube: {
-					url: 'https://www.internetingishard.com/html-and-css/',
-					imgUrl: 'https://www.google.com',
-					imgIcon: '',
-
+				'SQL Crash Course': {
+					url: 'https://www.youtube.com/watch?v=HXV3zeQKqGY',
+					imgUrl: 'https://i3.ytimg.com/vi/HXV3zeQKqGY/maxresdefault.jpg',
+					imgIcon: 'https://user-images.githubusercontent.com/24623425/36042969-f87531d4-0d8a-11e8-9dee-e87ab8c6a9e3.png',
 					description:
-						'what a cool way to learn javascript. it teaches you everything that you need to know'
+						'Lean all the basic SQL commands for managing big data fast and efficiently.'
 				}
 			}
-		}
+		},
 	};
 </script>
 
 <ProgressBar numObjectives={Object.keys(objectives).length} numCompleted={0} />
 
-{#each Object.keys(objectives) as objectKey}
+<div class="flex flex-col gap-4">
+
+	{#each Object.keys(objectives) as objectKey}
 	<ObjectCard object={objectives[objectKey]} title={objectKey} complete={true} />
 	<!-- <div class="h-5 sm:h-10 w-1 bg-slate-300"></div> -->
-{/each}
+	{/each}
+</div>

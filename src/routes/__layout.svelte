@@ -7,7 +7,7 @@
 <svelte:head>
 	<title>CodeMap</title>
 </svelte:head>
-<div class="min-h-screen flex flex-col bg-slate-900 text-white text-xs sm:text-sm">
+<div id="doc-body" class="min-h-screen flex flex-col text-xs sm:text-sm">
 	<Header />
 
 	<main class="flex-1 flex flex-col">
@@ -16,3 +16,10 @@
 
 	<Footer />
 </div>
+
+<style>
+#doc-body {
+	background: #00172b;
+	color: white;
+}
+</style>

@@ -16,10 +16,10 @@
 	}
 </script>
 
-<a href={'/' + title} on:click={changePage}>
+<a href={'/' + title} on:click={changePage} class="">
 	<div
 		id={title}
-		class={' duration-300 relative mb-4 cursor-pointer p-2 sm:px-4 pb-3 sm:p-4 after:inset-0 after:absolute after:duration-300 after:w-2/3 after:h-1/2 after:top-0 after:left-0 after:border-l-[1px] after:border-t-[1px] after:border-slate-700 after:border-solid hover:after:h-full hover:after:w-full hover:after:border-lime-300 before:absolute before:duration-300 before:w-2/3 before:h-1/2 before:bottom-0 before:right-0 before:border-r-[1px] before:border-b-[1px] before:border-slate-700 before:border-solid hover:before:h-full hover:before:w-full hover:before:border-lime-300 group '}
+		class={' duration-300 relative cursor-pointer p-2 sm:px-4 pb-3 sm:p-4 after:inset-0 after:absolute after:duration-300 after:w-2/3 after:h-1/2 after:top-0 after:left-0 after:border-l-[1px] after:border-t-[1px] after:border-[#003C5B] after:border-solid hover:after:h-full hover:after:w-full hover:after:border-cyan-300 before:absolute before:duration-300 before:w-2/3 before:h-1/2 before:bottom-0 before:right-0 before:border-r-[1px] before:border-b-[1px] before:border-[#003C5B] before:border-solid hover:before:h-full hover:before:w-full hover:before:border-cyan-300 group '}
 	>
 		<!-- <span class="absolute w-2/3 h-[1px] bg-lime-300 duration-300 left-0 top-0"></span>
     <span class="absolute w-2/3 h-[1px] bg-lime-300 duration-300 right-0 bottom-0"></span>
@@ -62,8 +62,8 @@
 	}
 
 	.bright-shadow {
-		border: 1px solid greenyellow;
-		box-shadow: 0 0 4px 1px greenyellow;
+		border: 1px solid cyan;
+		box-shadow: 0 0 4px 2px aqua;
 	}
 
 	.outlined {
