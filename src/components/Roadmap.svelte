@@ -12,14 +12,14 @@
 					imgUrl: 'https://i.imgur.com/9RDSnax.jpg',
 					imgIcon: 'https://i.imgur.com/9RDSnax.jpg',
 					description:
-						'what a cool way to learn javascript. it teaches you everything that you need to know'
+						'Start your coding journey with the very foundation of the internet - HTML; a glorified word document with extra steps.'
 				},
 				'CSS Crash Course': {
 					url: 'https://www.youtube.com/watch?v=GSOVTLajpac',
 					imgUrl: 'https://i3.ytimg.com/vi/GSOVTLajpac/maxresdefault.jpg',
 					imgIcon: 'https://i3.ytimg.com/vi/GSOVTLajpac/maxresdefault.jpg',
 					description:
-						'what a cool way to learn javascript. it teaches you everything that you need to know'
+						'Learn how to stylize your webpages and make beautiful designs with this introduction to CSS.'
 				},
 				'The Odin Project': {
 					url: 'https://www.theodinproject.com/paths/foundations/courses/foundations',
