@@ -9,7 +9,7 @@
 {:else}
 	<div id="roadmap" class="w-full max-w-[100ch] flex flex-col mx-auto px-4">
 		<h2
-			class="text-center uppercase text-lg sm:text-2xl font-medium mx-auto w-fit py-4 uppercase sm:py-6 "
+			class="text-center uppercase text-lg sm:text-2xl mx-auto w-fit py-4 uppercase sm:py-6 "
 		>
 			Welcome {$userName.name}
 		</h2>

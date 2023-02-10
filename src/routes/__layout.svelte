@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Webdev Codemap</title>
+	<title>Webdev Roadmap</title>
 	<meta name="description" content="Learn to code for free by completing this 2022 self-taught web developer roadmap.">
 </svelte:head>
 <div id="doc-body" class="min-h-screen flex flex-col text-xs sm:text-sm">

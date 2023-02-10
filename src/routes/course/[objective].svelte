@@ -6,7 +6,7 @@
 	}
 </script> -->
 <script>
-	import userName from '../store';
+	import userName from '../../store';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 	const { objective: pageName } = $page.params;
@@ -51,14 +51,14 @@
 		</div>
 	{:else}
 		<div
-			class="text-center flex flex-col sm:gap-1 font-extralight uppercase sm:text-2xl text-white font-semibold px-4 sm:px-8 mx-auto w-fit uppercase "
+			class="text-center flex flex-col sm:gap-1 font-extralight sm:text-2xl text-white font-semibold px-4 sm:px-8 mx-auto w-fit "
 		>
 			<h2>Current Objective:</h2>
-			<h2 class="outlined text-2xl sm:text-4xl">{pageName}</h2>
+			<h1 class="outlined text-2xl sm:text-4xl">{pageName}</h1>
 		</div>
 		<div class={'flex flex-col gap-1 duration-300'}>
 			<!-- do it so that the initial height is 0 and then it changes to fit -->
-			{#each milestoneMapped as { name, description, url, imgUrl, i, title }}
+			{#each milestoneMapped as { name, description, url, imgUrl, i, title, lowResImg }}
 				<a href={url} class="relative p-[1px]  flex flex-col group" target="_blank">
 					{#if $userName.progress?.[title] && $userName.progress[title].includes(name)}
 						<div class="absolute inset-[1px] z-50 bg-gray-900 opacity-80" />
@@ -124,12 +124,12 @@
 <style>
 	.outlined {
 		-webkit-text-fill-color: transparent;
-		-webkit-text-stroke: 1px cyan;
+		-webkit-text-stroke: 0.5px cyan;
 	}
 
 	@media (min-width: 640px) {
 		.outlined {
-			-webkit-text-stroke: 1.5px cyan;
+			-webkit-text-stroke: 1px cyan;
 		}
 	}
 
