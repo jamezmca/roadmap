@@ -6,7 +6,7 @@
 
 <svelte:head>
 	<title>Webdev Roadmap</title>
-	<meta name="description" content="Learn to code for free by completing this 2022 self-taught web developer roadmap.">
+	<meta name="description" content="Learn to Code for free by completing this 2023 Self-Taught Web Developer Roadmap. The Roadmap teaches all the latest and greatest frameworks, languages & technology in a logical and achievable sequence, and then helps you prepare yourself for job interviews, and gives you all the best tips on how to land a Developer role. ">
 </svelte:head>
 <div id="doc-body" class="min-h-screen flex flex-col text-xs sm:text-sm">
 	<Header />
