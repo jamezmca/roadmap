@@ -85,6 +85,12 @@
 		>
 			<i class="fa-brands fa-linkedin-in" />
 		</a>
+		<a href="https://twitter.com/_Smoljames" target="_blank" rel="noreferrer"
+			><i class="fa-brands fa-twitter duration-300 hover:text-cyan-300 cursor-pointer" /></a
+		>
+		<a href="https://www.reddit.com/user/smoljames" target="_blank" rel="noreferrer"
+			><i class="fa-brands fa-reddit duration-300 hover:text-cyan-300 cursor-pointer" /></a
+		>
 	</div>
 	<div class="flex flex-col sm:flex-row items-center text-xs gap-4 text-center">
 		<div
