@@ -66,34 +66,36 @@
 		style="background:transparent;color:white;transform:scale(0.75);;"
 		scrolling="no"
 	/> -->
-	<h2 class="text-xs">Connect with me</h2>
+	<h2 class="text-xs underline">Join The Guild</h2>
 	<div
 		class="absolute top-0 left-1/2 w-[1000px] max-w-[80%] -translate-x-1/2 h-[1px] bg-slate-700"
 	/>
-	<div class="flex justify-center items-center gap-4 ">
-		<a
-			href="https://www.youtube.com/channel/UCPBK_brqoVQtO-fOWpxQGXw"
-			target="_blank"
-			class="duration-200 hover:text-cyan-300 cursor-pointer"
-		>
-			<i class="fa-brands fa-youtube " />
-		</a>
-		<a
-			href="https://www.linkedin.com/in/jamezmcarthur/"
-			target="_blank"
-			class="duration-200 hover:text-cyan-300 cursor-pointer"
-		>
-			<i class="fa-brands fa-linkedin-in" />
-		</a>
-		<a href="https://twitter.com/_Smoljames" target="_blank" rel="noreferrer"
-			><i class="fa-brands fa-twitter duration-300 hover:text-cyan-300 cursor-pointer" /></a
-		>
-		<a href="https://www.reddit.com/user/smoljames" target="_blank" rel="noreferrer"
-			><i class="fa-brands fa-reddit duration-300 hover:text-cyan-300 cursor-pointer" /></a
-		>
-		<a href="https://github.com/jamezmca" target="_blank" rel="noreferrer"
-			><i class="fa-brands fa-github duration-300 hover:text-cyan-300 cursor-pointer" /></a
-		>
+	<div class="flex flex-col sm:flex-row sm:gap-x-5 text-2xl sm:text-3xl">
+		<div class="flex gap-x-5 items-center justify-center mx-auto">
+			<a href="https://www.youtube.com/c/Smoljames" target="_blank" rel="noreferrer"
+				><i class="fa-brands fa-youtube duration-300 hover:text-cyan-300 cursor-pointer" /></a
+			>
+			<a href="https://github.com/jamezmca" target="_blank" rel="noreferrer"
+				><i class="fa-brands fa-github duration-300 hover:text-cyan-300 cursor-pointer" /></a
+			>
+			<a href="https://discord.gg/BYr6gujs4k" target="_blank" rel="noreferrer"
+				><i class="fa-brands fa-discord duration-300 hover:text-cyan-300 cursor-pointer" /></a
+			>
+			<a href="https://twitter.com/_Smoljames" target="_blank" rel="noreferrer"
+				><i class="fa-brands fa-twitter duration-300 hover:text-cyan-300 cursor-pointer" /></a
+			>
+		</div>
+		<div class="flex gap-x-5 items-center mx-auto">
+			<a href="https://www.reddit.com/user/smoljames" target="_blank" rel="noreferrer"
+				><i class="fa-brands fa-reddit duration-300 hover:text-cyan-300 cursor-pointer" /></a
+			>
+			<a href="https://medium.com/@_Smoljames" target="_blank" rel="noreferrer"
+				><i class="fa-brands fa-medium duration-300 hover:text-cyan-300 cursor-pointer" /></a
+			>
+			<a href="https://www.linkedin.com/in/jamezmcarthur/" target="_blank" rel="noreferrer"
+				><i class="fa-brands fa-linkedin duration-300 hover:text-cyan-300 cursor-pointer" /></a
+			>
+		</div>
 	</div>
 	<div class="flex flex-col sm:flex-row items-center text-xs gap-4 text-center">
 		<div
