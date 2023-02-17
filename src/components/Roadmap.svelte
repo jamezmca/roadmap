@@ -114,7 +114,7 @@
 		},
 		'Frontend Frameworks': {
 			description:
-				'Frontend JavaScript frameworks are essential to optimizing your developer experience & capabilities - In this section we look at Next.js, React, SvelteKit & Blitz; all amazing and very up-and-coming',
+				'Frontend JavaScript frameworks are essential to optimizing your developer experience & capabilities - In this section we look at Next.js, React, SvelteKit & Blitz; all amazing and very up-and-coming.',
 			milestones: {
 				'React Crash Course': {
 					url: 'https://youtu.be/hRlujM-sycg',
