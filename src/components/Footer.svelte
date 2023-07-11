@@ -21,16 +21,38 @@
 		if (!subscriberEmail) {
 			return (subError = 'Please enter an email');
 		}
-		const supabase = createClient(supabaseUrl, supabaseAPI_KEY);
-		const { error } = await supabase
-			.from('Subscribers')
-			.insert({ email: subscriberEmail }, { returning: 'minimal' });
-		if (error) {
-			console.log(error);
-			subError = error?.message;
-		} else {
+		// const supabase = createClient(supabaseUrl, supabaseAPI_KEY);
+		// const { error } = await supabase
+		// 	.from('Subscribers')
+		// 	.insert({ email: subscriberEmail }, { returning: 'minimal' });
+		// if (error) {
+		// 	console.log(error);
+		// 	subError = error?.message;
+		// } else {
+		// 	subSuccess = true;
+		// 	// localStorage.setItem('')
+		// }
+
+		try {
+			const res = await fetch('https://mailing-list-3hzb.onrender.com/api/subscribe', {
+				method: 'POST',
+				headers: {
+					'Content-type': 'application/json'
+				},
+				body: JSON.stringify({
+					password: '80085',
+					email: subscriberEmail,
+					platform: 'course'
+				})
+			});
+			if (res.status === '201') {
+				console.log('Send');
+			}
 			subSuccess = true;
-			// localStorage.setItem('')
+			subscriberEmail = '';
+		} catch (err) {
+			console.log('Failed to subscribe');
+			subError = true;
 		}
 	}
 </script>
