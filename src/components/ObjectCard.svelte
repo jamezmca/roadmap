@@ -53,15 +53,17 @@
 								: 'opacity-40 hover:opacity-100')}
 					/>
 					<div class="absolute inset-0 rounded-full overflow-hidden">
-						<img
-							class={' object-cover w-full h-full duration-300 ' +
-								($userName.progress?.[title] && $userName.progress[title].includes(name)
-									? 'opacity-30'
-									: 'opacity-100')}
-							src={imgIcon}
-							alt={name}
-							on:load={() => {}}
-						/>
+						<div class="">
+							<img
+								class={' object-cover w-full h-full duration-300 ' +
+									($userName.progress?.[title] && $userName.progress[title].includes(name)
+										? 'opacity-30'
+										: 'opacity-100')}
+								src={imgIcon}
+								alt={name}
+								on:load={() => {}}
+							/>
+						</div>
 						<i
 							class={'duration-300 fa-solid fa-check text-cyan-300 text-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 ' +
 								($userName.progress?.[title] && $userName.progress[title].includes(name)
